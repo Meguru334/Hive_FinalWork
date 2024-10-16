@@ -1,10 +1,8 @@
 #include "position.h"
 
 Position::Position(int x, int y,QObject* parent)
-    :QObject(parent)
+    :QObject(parent),x(x), y(y)
 {
-//TODO
-
 }
 
 Position* Position::getAdjacentPosition(int i) const
@@ -21,20 +19,20 @@ Position* Position::getAdjacentPosition(int i) const
 
 int Position::getX() const
 {
-//TODO
+ return x;
 }
 
 int Position::getY() const
 {
-//TODO
+return y;
 }
 
 int Position::setX(int x)
 {
-//TODO
+this->x = x;
 }
 
 int Position::setY(int y)
 {
-//TODO
+this->y = y;
 }
